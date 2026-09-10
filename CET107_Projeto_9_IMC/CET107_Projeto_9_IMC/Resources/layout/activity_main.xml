@@ -7,8 +7,8 @@
 	android:fitsSystemWindows="true"
 	android:gravity="center"
 	android:orientation="vertical"
-	android:background="@drawable/fundo2"
-	android:backgroundTint="#8000FF00"
+	android:background="@drawable/bg_completo"
+	android:backgroundTint="#44FFFFFF"
 	android:backgroundTintMode="multiply"
 			  
 			  
