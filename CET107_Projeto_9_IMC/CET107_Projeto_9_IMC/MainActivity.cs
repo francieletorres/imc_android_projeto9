@@ -1,8 +1,11 @@
 using Android.Graphics;
+using Android.Views;
 
 namespace CET107_Projeto_9_IMC
 {
-    [Activity(Label = "@string/app_name", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", 
+        Theme = "@style/AppTheme",
+        MainLauncher = true)]
     public class MainActivity : Activity
     {
         //ENTRADAS
@@ -32,10 +35,45 @@ namespace CET107_Projeto_9_IMC
             //DEFINIR A FONTE DA APLICACAO E ATRIBUIR AOS CONTROLOSUI
             Typeface minhaFonte = Resources.GetFont(Resource.Font.VielottaRegular);
 
-            tvIMCC.Typeface = minhaFonte;
-            etPesoC.Typeface = minhaFonte;
-            etAlturaC.Typeface = minhaFonte;
-            btCalcularC.Typeface = minhaFonte;
+            //tvIMCC.Typeface = minhaFonte;
+            //etPesoC.Typeface = minhaFonte;
+            //etAlturaC.Typeface = minhaFonte;
+            //btCalcularC.Typeface = minhaFonte;
+
+            //vamos utilizar a função que foi criada abaixo
+            FontHelper.AplicaFonte(Window.DecorView.RootView, minhaFonte);
+
+
+
+        }
+    }
+
+    //FontHelper
+    public static class FontHelper
+    {
+        public static void AplicaFonte(View view, Typeface tf) //método
+        {
+            if(view is ViewGroup group)
+            {
+                for(int contaControloUI = 0;
+                        contaControloUI < group.ChildCount;
+                        contaControloUI++)
+                {
+                    AplicaFonte(group.GetChildAt(contaControloUI), tf); //recursivo
+                }
+            }
+            else if(view is TextView textView) 
+            {
+               textView.Typeface = tf;
+            }
+            else if(view is EditText editText)
+            {
+                editText.Typeface = tf;
+            }
+            else if(view is Button button)
+            {
+                button.Typeface = tf;
+            }
         }
     }
 }
