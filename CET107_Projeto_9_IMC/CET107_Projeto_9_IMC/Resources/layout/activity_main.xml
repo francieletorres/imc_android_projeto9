@@ -5,16 +5,80 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 	android:fitsSystemWindows="true"
-	android:gravity="center"
+	android:gravity="top"
 	android:orientation="vertical"
 	android:background="@drawable/bg_completo"
 	android:backgroundTint="#44FFFFFF"
-	android:backgroundTintMode="multiply"
-			  
-			  
-			  
-			  
+	android:backgroundTintMode="multiply"		  
 >
+	<!-- Cartao peso -->
+	<LinearLayout
+		android:id="@+id/cardPeso"
+		android:background="@drawable/backgdefault"
+		android:orientation="vertical"	
+		android:elevation="6dp"
+		android:padding="10dp"
+		android:gravity="center"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="0dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		>
 
-	
+		<EditText
+			android:id="@+id/etPeso"
+			android:hint="Peso (Kg)"
+			android:textSize="25sp"
+			android:inputType="numberDecimal"
+			android:textColorHint="#AAA"
+			android:textColor="#A68ACB"
+			android:background="@android:color/transparent"
+			android:gravity="center"
+			android:padding="5dp"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="0dp"
+			android:layout_marginBottom="0dp"
+			android:layout_marginLeft="0dp"
+			android:layout_marginRight="0dp"
+			/>
+	</LinearLayout>
+
+	<!--  Cartao altura -->
+	<LinearLayout
+		android:id="@+id/cardAltura"
+		android:background="@drawable/backgdefault"
+		android:orientation="vertical"
+		android:elevation="6dp"
+		android:padding="10dp"
+		android:gravity="center"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="0dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		>
+
+		<EditText
+			android:id="@+id/etAltura"
+			android:hint="Altura (cm)"
+			android:textSize="25sp"
+			android:inputType="numberDecimal"
+			android:textColorHint="#AAA"
+			android:textColor="#A68ACB"
+			android:background="@android:color/transparent"
+			android:gravity="center"
+			android:padding="5dp"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="0dp"
+			android:layout_marginBottom="0dp"
+			android:layout_marginLeft="0dp"
+			android:layout_marginRight="0dp"
+			/>
+	</LinearLayout>
+
 </LinearLayout>
