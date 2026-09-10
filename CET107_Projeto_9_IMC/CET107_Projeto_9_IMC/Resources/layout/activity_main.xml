@@ -81,4 +81,73 @@
 			/>
 	</LinearLayout>
 
+	<!--  Cartao botao calcular -->
+	<LinearLayout
+		android:id="@+id/cardCalcular"
+		android:background="@drawable/backginvert"
+		android:orientation="vertical"
+		android:elevation="6dp"
+		android:padding="10dp"
+		android:gravity="center"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="0dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		>
+
+		<Button
+			android:id="@+id/btCalcular"
+			android:hint="Calcular"
+			android:textSize="25sp"
+			android:textColor="#FFF"
+			android:background="@android:color/transparent"
+			android:gravity="center"
+			android:padding="5dp"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="0dp"
+			android:layout_marginBottom="0dp"
+			android:layout_marginLeft="0dp"
+			android:layout_marginRight="0dp"
+			/>
+
+	</LinearLayout>
+
+
+	<!--  Cartao textView imc-->
+	<LinearLayout
+		android:id="@+id/cardIMC"
+		android:background="@drawable/backgdefault"
+		android:orientation="vertical"
+		android:elevation="6dp"
+		android:padding="10dp"
+		android:gravity="center"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_marginBottom="0dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		>
+
+		<TextView
+			android:id="@+id/tvIMC"
+			android:hint="IMC (Kg/m^2)"
+			android:textSize="25sp"
+			android:textColor="#A68ACB"
+			android:background="@android:color/transparent"
+			android:gravity="center"
+			android:padding="5dp"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="0dp"
+			android:layout_marginBottom="0dp"
+			android:layout_marginLeft="0dp"
+			android:layout_marginRight="0dp"
+			/>
+
+	</LinearLayout>
+
 </LinearLayout>
