@@ -9,7 +9,7 @@
 
 	<!-- borda -->
 	<stroke android:width="2dp"
-			android:color="#A68ACB" />
+			android:color="#8065A8" />
 
 	<padding android:left="10dp"
 			 android:top="10dp"
