@@ -4,11 +4,11 @@
 		<!--Margens -->
 	<dimen name="margin_card_left">16dp</dimen>
 	<dimen name="margin_card_right">16dp</dimen>
-	<dimen name="margin_card_top">16dp</dimen>
+	<dimen name="margin_card_top">12dp</dimen>
 
 		<!--Padding -->
-	<dimen name="padding_card">16dp</dimen>
-	<dimen name="padding_inner">8dp</dimen>
+	<dimen name="padding_card">12dp</dimen>
+	<dimen name="padding_inner">6dp</dimen>
 
 		<!--Texto -->
 	<dimen name="text_size_hint">28sp</dimen>

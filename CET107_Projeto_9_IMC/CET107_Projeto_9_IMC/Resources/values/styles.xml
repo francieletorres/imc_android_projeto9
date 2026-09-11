@@ -1,9 +1,70 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <resources>
 
+	<!-- Estilo de base da app-->
 	<style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
 		<item name="android:fontFamily">@font/montserratregular</item>
 		<!-- Nome do ficheiro da fonte com letra minuscula-->
 	</style>
+
+	<!-- Estilo para os cartoes LinearLAyout-->
+	<style name="CardStyle">
+		<item name="android:orientation">vertical</item>
+		<item name="android:elevation">@dimen/elevation_card</item>
+		<item name="android:padding">@dimen/padding_card</item>
+		<item name="android:gravity">center</item>
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">@dimen/margin_card_top</item>
+		<item name="android:layout_marginBottom">0dp</item>
+		<item name="android:layout_marginLeft">@dimen/margin_card_left</item>
+		<item name="android:layout_marginRight">@dimen/margin_card_right</item>
+	</style>
+
+	<style name="etCommonProperties">
+		<item name="android:textSize">@dimen/text_size_hint</item>
+		<item name="android:inputType">numberDecimal</item>
+		<item name="android:textColorHint">@color/etHintTextColor</item>
+		<item name="android:textColor">@color/etTextColor</item>
+		<item name="android:background">@color/transparent</item>
+		<item name="android:gravity">center</item>
+		<item name="android:padding">@dimen/padding_inner</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">0dp</item>
+		<item name="android:layout_marginBottom">0dp</item>
+		<item name="android:layout_marginLeft">0dp</item>
+		<item name="android:layout_marginRight">0dp</item>
+	</style>
+
+	<style name="btCommonProperties">
+		<item name="android:fontFamily">@font/montserratregular</item>
+		<item name="android:textSize">@dimen/text_size_button</item>
+		<item name="android:textColor">@color/btTextColor</item>
+		<item name="android:background">@color/transparent</item>
+		<item name="android:gravity">center</item>
+		<item name="android:padding">@dimen/padding_inner</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">0dp</item>
+		<item name="android:layout_marginBottom">0dp</item>
+		<item name="android:layout_marginLeft">0dp</item>
+		<item name="android:layout_marginRight">0dp</item>
+	</style>
+
+	<style name="tvCommonProperties">
+		<item name="android:textSize">@dimen/text_size_result</item>
+		<item name="android:textColor">@color/tvTextColor</item>
+		<item name="android:background">@color/transparent</item>
+		<item name="android:gravity">center</item>
+		<item name="android:padding">@dimen/padding_inner</item>
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">0dp</item>
+		<item name="android:layout_marginBottom">0dp</item>
+		<item name="android:layout_marginLeft">0dp</item>
+		<item name="android:layout_marginRight">0dp</item>
+	</style>
+	
 	
 </resources>

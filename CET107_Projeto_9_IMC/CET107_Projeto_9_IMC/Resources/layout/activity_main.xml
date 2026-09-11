@@ -70,7 +70,6 @@
 
 		</LinearLayout>
 
-	
 	</android.widget.Toolbar>
 
 
@@ -78,102 +77,61 @@
 	<LinearLayout
 		android:id="@+id/cardPeso"
 		android:background="@drawable/bg_backgdefault"
-		android:orientation="vertical"	
-		android:elevation="@dimen/elevation_card"
-		android:padding="@dimen/padding_card"
-		android:gravity="center"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="@dimen/margin_card_top"
-		android:layout_marginBottom="0dp"
-		android:layout_marginLeft="@dimen/margin_card_left"
-		android:layout_marginRight="@dimen/margin_card_right"
+		style="@style/CardStyle"
 		>
 
 		<EditText
 			android:id="@+id/etPeso"
 			android:hint="@string/sPeso"
-			android:textSize="@dimen/text_size_hint"
-			android:inputType="numberDecimal"
-			android:textColorHint="@color/etHintTextColor"
-			android:textColor="@color/etTextColor"
-			android:background="@android:color/transparent"
-			android:gravity="center"
-			android:padding="@dimen/padding_inner"
-			android:layout_width="fill_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="0dp"
-			android:layout_marginBottom="0dp"
-			android:layout_marginLeft="0dp"
-			android:layout_marginRight="0dp"
+			style="@style/etCommonProperties"
 			/>
+
 	</LinearLayout>
+
 
 	<!--  Cartao altura -->
 	<LinearLayout
 		android:id="@+id/cardAltura"
 		android:background="@drawable/bg_backgdefault"
-		android:orientation="vertical"
-		android:elevation="@dimen/elevation_card"
-		android:padding="@dimen/padding_card"
-		android:gravity="center"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="@dimen/margin_card_top"
-		android:layout_marginBottom="0dp"
-		android:layout_marginLeft="@dimen/margin_card_left"
-		android:layout_marginRight="@dimen/margin_card_right"
+		style="@style/CardStyle"
 		>
 
 		<EditText
 			android:id="@+id/etAltura"
 			android:hint="@string/sAltura"
-			android:textSize="@dimen/text_size_hint"
-			android:inputType="numberDecimal"
-			android:textColorHint="@color/etHintTextColor"
-			android:textColor="@color/etTextColor"
-			android:background="@android:color/transparent"
-			android:gravity="center"
-			android:padding="@dimen/padding_inner"
-			android:layout_width="fill_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="0dp"
-			android:layout_marginBottom="0dp"
-			android:layout_marginLeft="0dp"
-			android:layout_marginRight="0dp"
+			style="@style/etCommonProperties"
 			/>
+
 	</LinearLayout>
+
 
 	<!--  Cartao botao calcular -->
 	<LinearLayout
 		android:id="@+id/cardCalcular"
 		android:background="@drawable/bg_backginvert"
-		android:orientation="vertical"
-		android:elevation="@dimen/elevation_card"
-		android:padding="@dimen/padding_card"
-		android:gravity="center"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="@dimen/margin_card_top"
-		android:layout_marginBottom="0dp"
-		android:layout_marginLeft="@dimen/margin_card_left"
-		android:layout_marginRight="@dimen/margin_card_right"
+		style="@style/CardStyle"
 		>
 
 		<Button
 			android:id="@+id/btCalcular"
 			android:text="@string/sCalcular"
-			android:textSize="@dimen/text_size_button"
-			android:textColor="@color/btTextColor"
-			android:background="@android:color/transparent"
-			android:gravity="center"
-			android:padding="@dimen/padding_inner"
-			android:layout_width="fill_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="0dp"
-			android:layout_marginBottom="0dp"
-			android:layout_marginLeft="0dp"
-			android:layout_marginRight="0dp"
+			style="@style/btCommonProperties"
+			/>
+
+	</LinearLayout>
+
+
+	<!--  Cartao botao Limpar -->
+	<LinearLayout
+		android:id="@+id/cardLimpar"
+		android:background="@drawable/bg_backginvert"
+		style="@style/CardStyle"
+		>
+
+		<Button
+			android:id="@+id/btLimpar"
+			android:text="@string/sLimpar"
+			style="@style/btCommonProperties"
 			/>
 
 	</LinearLayout>
@@ -183,32 +141,13 @@
 	<LinearLayout
 		android:id="@+id/cardIMC"
 		android:background="@drawable/bg_backgdefault"
-		android:orientation="vertical"
-		android:elevation="@dimen/elevation_card"
-		android:padding="@dimen/padding_card"
-		android:gravity="center"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_marginTop="@dimen/margin_card_top"
-		android:layout_marginBottom="0dp"
-		android:layout_marginLeft="@dimen/margin_card_left"
-		android:layout_marginRight="@dimen/margin_card_right"
+		style="@style/CardStyle"
 		>
 
 		<TextView
 			android:id="@+id/tvIMC"
 			android:hint="@string/sIMC"
-			android:textSize="@dimen/text_size_result"
-			android:textColor="@color/tvTextColor"
-			android:background="@android:color/transparent"
-			android:gravity="center"
-			android:padding="@dimen/padding_inner"
-			android:layout_width="fill_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="0dp"
-			android:layout_marginBottom="0dp"
-			android:layout_marginLeft="0dp"
-			android:layout_marginRight="0dp"
+			style="@style/tvCommonProperties"
 			/>
 
 	</LinearLayout>
