@@ -2,20 +2,26 @@
 <resources>
 
 		<!--Margens -->
-	<dimen name="margin_card_left">16dp</dimen>
-	<dimen name="margin_card_right">16dp</dimen>
-	<dimen name="margin_card_top">12dp</dimen>
+	<dimen name="margin_card_left">14dp</dimen>
+	<dimen name="margin_card_right">14dp</dimen>
+	<dimen name="margin_card_top">14dp</dimen>
+	<dimen name="margin_card_bottom">14dp</dimen>
 
-		<!--Padding -->
-	<dimen name="padding_card">12dp</dimen>
-	<dimen name="padding_inner">6dp</dimen>
+
+	<!--Padding -->
+	<dimen name="padding_card">14dp</dimen>
+	<dimen name="padding_inner">8dp</dimen>
 
 		<!--Texto -->
-	<dimen name="text_size_hint">28sp</dimen>
-	<dimen name="text_size_button">28sp</dimen>
-	<dimen name="text_size_result">28sp</dimen>
+	<dimen name="text_size_hint">26sp</dimen>
+	<dimen name="text_size_button">26sp</dimen>
+	<dimen name="text_size_result">26sp</dimen>
 
 		<!--Elevacao -->
 	<dimen name="elevation_card">6dp</dimen>
+
+	<!--Dimensao da imagem -->
+	<dimen name="image_width">220dp</dimen>
+	<dimen name="image_height">220dp</dimen>
 
 	</resources>

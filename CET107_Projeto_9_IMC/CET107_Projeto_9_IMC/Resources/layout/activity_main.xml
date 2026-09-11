@@ -152,4 +152,25 @@
 
 	</LinearLayout>
 
+	<!--  Cartao imageView do imc-->
+	<LinearLayout
+		android:id="@+id/cardIMCImage"
+		android:background="@drawable/bg_backgdefault"
+		style="@style/CardStyle"
+		android:layout_marginBottom="@dimen/margin_card_bottom"
+		>
+
+		<ImageView
+			android:id="@+id/ivIMC"
+			android:src="@drawable/img_imc0"
+			android:padding="5dp"
+			android:layout_width="@dimen/image_width"
+			android:layout_height="@dimen/image_height"
+			android:scaleType="fitCenter"
+			android:contentDescription="Imagem do IMC"
+			/>
+
+	</LinearLayout>
+
+
 </LinearLayout>

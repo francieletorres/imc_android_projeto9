@@ -2,9 +2,10 @@
 <resources>
 
 		<!--Margens -->
-	<dimen name="margin_card_left">10dp</dimen>
-	<dimen name="margin_card_right">10dp</dimen>
+	<dimen name="margin_card_left">8dp</dimen>
+	<dimen name="margin_card_right">8dp</dimen>
 	<dimen name="margin_card_top">8dp</dimen>
+	<dimen name="margin_card_bottom">8dp</dimen>
 
 		<!--Padding -->
 	<dimen name="padding_card">8dp</dimen>
@@ -18,4 +19,8 @@
 		<!--Elevacao -->
 	<dimen name="elevation_card">6dp</dimen>
 
+	<!--Dimensao da imagem -->
+	<dimen name="image_width">200dp</dimen>
+	<dimen name="image_height">200dp</dimen>
+	
 	</resources>
