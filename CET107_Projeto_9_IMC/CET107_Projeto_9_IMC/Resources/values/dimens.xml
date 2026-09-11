@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+		<!--Margens -->
+	<dimen name="margin_card_left">10dp</dimen>
+	<dimen name="margin_card_right">10dp</dimen>
+	<dimen name="margin_card_top">10dp</dimen>
+
+		<!--Padding -->
+	<dimen name="padding_card">10dp</dimen>
+	<dimen name="padding_inner">5dp</dimen>
+
+		<!--Texto -->
+	<dimen name="text_size_hint">22sp</dimen>
+	<dimen name="text_size_button">22sp</dimen>
+	<dimen name="text_size_result">22sp</dimen>
+
+		<!--Elevacao -->
+	<dimen name="elevation_card">6dp</dimen>
+
+	</resources>
