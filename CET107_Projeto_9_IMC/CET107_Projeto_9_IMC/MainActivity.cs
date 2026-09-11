@@ -5,6 +5,7 @@ namespace CET107_Projeto_9_IMC
 {
     [Activity(Label = "@string/app_name", 
         Theme = "@style/AppTheme",
+        ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait,
         MainLauncher = true)]
     public class MainActivity : Activity
     {
@@ -21,6 +22,8 @@ namespace CET107_Projeto_9_IMC
         {
 
             base.OnCreate(savedInstanceState);
+            //pode usar dessa forma ou usando o screnOrientation lá de cima
+            //RequestedOrientation = Android.Content.PM.ScreenOrientation.Portrait; 
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
