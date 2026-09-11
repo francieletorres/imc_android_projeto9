@@ -43,7 +43,7 @@
 
 			<TextView
 				android:id="@+id/tvTitulo"
-				android:text="APP IMC CET107 - V03"
+				android:text="@string/app_name2"
 				android:textSize="20sp"
 				android:textColor="@color/btTextColor"
 				android:gravity="center"
@@ -92,7 +92,7 @@
 
 		<EditText
 			android:id="@+id/etPeso"
-			android:hint="Peso (Kg)"
+			android:hint="@string/sPeso"
 			android:textSize="@dimen/text_size_hint"
 			android:inputType="numberDecimal"
 			android:textColorHint="@color/etHintTextColor"
@@ -127,7 +127,7 @@
 
 		<EditText
 			android:id="@+id/etAltura"
-			android:hint="Altura (cm)"
+			android:hint="@string/sAltura"
 			android:textSize="@dimen/text_size_hint"
 			android:inputType="numberDecimal"
 			android:textColorHint="@color/etHintTextColor"
@@ -162,7 +162,7 @@
 
 		<Button
 			android:id="@+id/btCalcular"
-			android:text="Calcular"
+			android:text="@string/sCalcular"
 			android:textSize="@dimen/text_size_button"
 			android:textColor="@color/btTextColor"
 			android:background="@android:color/transparent"
@@ -197,7 +197,7 @@
 
 		<TextView
 			android:id="@+id/tvIMC"
-			android:hint="IMC (Kg/m^2)"
+			android:hint="@string/sIMC"
 			android:textSize="@dimen/text_size_result"
 			android:textColor="@color/tvTextColor"
 			android:background="@android:color/transparent"

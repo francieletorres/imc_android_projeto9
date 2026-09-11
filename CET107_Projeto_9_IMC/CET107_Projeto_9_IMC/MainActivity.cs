@@ -3,7 +3,7 @@ using Android.Views;
 
 namespace CET107_Projeto_9_IMC
 {
-    [Activity(Label = "@string/app_name", 
+    [Activity(Label = "@string/app_name2", 
         Theme = "@style/AppTheme",
         Icon ="@drawable/icon_bmi01",
         ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait,
