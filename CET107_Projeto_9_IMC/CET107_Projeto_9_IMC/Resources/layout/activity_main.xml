@@ -15,7 +15,7 @@
 	<!-- Cartao peso -->
 	<LinearLayout
 		android:id="@+id/cardPeso"
-		android:background="@drawable/backgdefault"
+		android:background="@drawable/bg_backgdefault"
 		android:orientation="vertical"	
 		android:elevation="@dimen/elevation_card"
 		android:padding="@dimen/padding_card"
@@ -50,7 +50,7 @@
 	<!--  Cartao altura -->
 	<LinearLayout
 		android:id="@+id/cardAltura"
-		android:background="@drawable/backgdefault"
+		android:background="@drawable/bg_backgdefault"
 		android:orientation="vertical"
 		android:elevation="@dimen/elevation_card"
 		android:padding="@dimen/padding_card"
@@ -85,7 +85,7 @@
 	<!--  Cartao botao calcular -->
 	<LinearLayout
 		android:id="@+id/cardCalcular"
-		android:background="@drawable/backginvert"
+		android:background="@drawable/bg_backginvert"
 		android:orientation="vertical"
 		android:elevation="@dimen/elevation_card"
 		android:padding="@dimen/padding_card"
@@ -120,7 +120,7 @@
 	<!--  Cartao textView imc-->
 	<LinearLayout
 		android:id="@+id/cardIMC"
-		android:background="@drawable/backgdefault"
+		android:background="@drawable/bg_backgdefault"
 		android:orientation="vertical"
 		android:elevation="@dimen/elevation_card"
 		android:padding="@dimen/padding_card"
