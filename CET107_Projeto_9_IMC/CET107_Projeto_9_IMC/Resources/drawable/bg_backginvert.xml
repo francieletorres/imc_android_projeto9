@@ -5,9 +5,9 @@
 
 	<!-- Cor de fundo -->
 	<gradient android:angle="270"
-		android:startColor="#C9B7E8"
-		android:centerColor="#A68ACB"
-		android:endColor="#8065A8"
+		android:startColor="@color/colorPrimaryLight"
+		android:centerColor="@color/colorPrimary"
+		android:endColor="@color/colorPrimaryDark"
 	/>
 
 	<!-- Cantos -->
@@ -15,7 +15,7 @@
 
 	<!-- borda -->
 	<stroke android:width="2dp"
-			android:color="#8065A8" />
+			android:color="@color/colorPrimaryDark" />
 
 
 	<!-- enchimento -->

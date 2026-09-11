@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<resources>
+
+	<!--Cores gerais-->
+	<color name="colorPrimary">#A68ACB</color>
+	<color name="colorPrimaryDark">#8065A8</color>
+	<color name="colorPrimaryLight">#C9B7E8</color>
+	<color name="colorAccent">#B89AE0</color>
+
+	<!--Cores dos controlos UI-->
+	<color name="etHintTextColor">#AAA</color>
+	<color name="etTextColor">@color/colorPrimary</color>
+	<color name="etbackgroundColor">#FFF</color>
+
+	<color name="tvTextColor">@color/colorPrimary</color>
+	<color name="tvbackgroundColor">#FFF</color>
+
+	<color name="btTextColor">#FFFFFF</color>
+	<color name="btBackgroundColor">@color/colorPrimary</color>
+
+	<color name="transparent">#00000000</color>
+
+</resources>
