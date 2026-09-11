@@ -5,6 +5,7 @@ namespace CET107_Projeto_9_IMC
 {
     [Activity(Label = "@string/app_name", 
         Theme = "@style/AppTheme",
+        Icon ="@drawable/icon_bmi01",
         ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait,
         MainLauncher = true)]
     public class MainActivity : Activity
@@ -36,7 +37,7 @@ namespace CET107_Projeto_9_IMC
 
 
             //DEFINIR A FONTE DA APLICACAO E ATRIBUIR AOS CONTROLOSUI
-            Typeface minhaFonte = Resources.GetFont(Resource.Font.VielottaRegular);
+            Typeface minhaFonte = Resources.GetFont(Resource.Font.MontserratRegular);
 
             //tvIMCC.Typeface = minhaFonte;
             //etPesoC.Typeface = minhaFonte;

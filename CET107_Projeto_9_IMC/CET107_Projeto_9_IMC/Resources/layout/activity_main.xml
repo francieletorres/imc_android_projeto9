@@ -12,6 +12,68 @@
 	android:backgroundTintMode="multiply"		  
 >
 
+	<!-- Barra de ferramentas -->
+	<android.widget.Toolbar 
+		android:id="@+id/toolbar"
+		android:background="#8065A8"
+		android:padding="0dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="0dp">
+	
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:padding="0dp"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:layout_margin="0dp">
+
+			<ImageView
+				android:id="@+id/ivLogo"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="35dp"
+				android:src="@drawable/icon_bmi01"
+				android:contentDescription="Logo da App"
+				android:scaleType="fitCenter"
+				android:layout_marginLeft="0dp"
+				android:layout_marginRight="0dp"/>
+
+			<TextView
+				android:id="@+id/tvTitulo"
+				android:text="APP IMC CET107 - V03"
+				android:textSize="20sp"
+				android:textColor="#FFF"
+				android:gravity="center"
+				android:padding="0dp"
+				android:layout_width="0dp"
+				android:layout_weight="8"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="0dp"
+				android:layout_marginRight="0dp"/>
+
+			<ImageButton
+				android:id="@+id/imSair"
+				android:src="@drawable/icon_exit01"
+				android:contentDescription="Saída"
+				android:background="?android:attr/selectableItemBackgroundBorderless"
+				android:padding="0dp"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:layout_height="35dp"
+				android:scaleType="centerInside"
+				android:layout_marginLeft="0dp"
+				android:layout_marginRight="15dp"
+				/>
+
+		</LinearLayout>
+
+	
+	</android.widget.Toolbar>
+
+
 	<!-- Cartao peso -->
 	<LinearLayout
 		android:id="@+id/cardPeso"
