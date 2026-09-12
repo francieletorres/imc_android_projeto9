@@ -34,6 +34,7 @@ namespace CET107_Projeto_9_IMC
 
             Button? btCalcularC = FindViewById<Button>(Resource.Id.btCalcular)!;
             Button? btLimparC = FindViewById<Button>(Resource.Id.btLimpar)!;
+            ImageButton? ibSairC = FindViewById<ImageButton>(Resource.Id.ibSair)!;
 
             tvIMCC = FindViewById<TextView>(Resource.Id.tvIMC);
             ivIMCC = FindViewById<ImageView>(Resource.Id.ivIMC);
@@ -166,6 +167,7 @@ namespace CET107_Projeto_9_IMC
                 }
             };
 
+            //evento click do botão limpar
             btLimparC!.Click += delegate
             {
 
@@ -183,6 +185,27 @@ namespace CET107_Projeto_9_IMC
                     MostraImagem("img_imc0");
                     etPesoC!.RequestFocus();
                 }
+            };
+
+            //evento click do botão sair
+            ibSairC!.Click += delegate
+            {
+                //FinishAffinity(); encerra a  atividade atual e as relacionadas fechando toda a aplicação
+
+                new Android.App.AlertDialog.Builder(this)
+                .SetTitle("Saída da Aplicação!")
+                .SetMessage("Tem certeza de que deseja sair da aplicaçao?")
+                .SetPositiveButton("OK", (sender, args) =>
+                {
+                    FinishAffinity(); //encerra a  atividade atual e as relacionadas fechando toda a aplicação
+                })
+                .SetNegativeButton("Cancel", (sender, args) =>
+                {
+                    //Ação para o botao cancel, (opcional)
+                    //Neste não é necessário fazer nada porque a caixa será fechada automaticamente.
+                })
+                .Show();
+
             };
 
         }

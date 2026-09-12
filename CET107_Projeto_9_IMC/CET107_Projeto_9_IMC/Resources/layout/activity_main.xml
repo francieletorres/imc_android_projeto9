@@ -55,7 +55,7 @@
 				android:layout_marginRight="0dp"/>
 
 			<ImageButton
-				android:id="@+id/imSair"
+				android:id="@+id/ibSair"
 				android:src="@drawable/icon_exit01"
 				android:contentDescription="Saída"
 				android:background="?android:attr/selectableItemBackgroundBorderless"
