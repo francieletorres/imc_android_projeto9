@@ -40,7 +40,9 @@ namespace CET107_Projeto_9_IMC
             ivIMCC = FindViewById<ImageView>(Resource.Id.ivIMC);
 
             //DEFINIR A FONTE DA APLICACAO E ATRIBUIR AOS CONTROLOSUI
-            Typeface minhaFonte = Resources.GetFont(Resource.Font.MontserratRegular);
+#pragma warning disable CA1416 // Converting null literal or possible null value to non-nullable type.
+            Typeface? minhaFonte = Resources?.GetFont(Resource.Font.MontserratRegular);
+#pragma warning restore CA1416 // Converting null literal or possible null value to non-nullable type.
 
             //tvIMCC.Typeface = minhaFonte;
             //etPesoC.Typeface = minhaFonte;
@@ -48,7 +50,8 @@ namespace CET107_Projeto_9_IMC
             //btCalcularC.Typeface = minhaFonte;
 
             //vamos utilizar a função que foi criada abaixo
-            FontHelper.AplicaFonte(Window.DecorView.RootView, minhaFonte);
+            if (minhaFonte != null)
+            FontHelper.AplicaFonte(Window!.DecorView.RootView!, minhaFonte);
 
 
             btCalcularC!.Click += delegate
@@ -187,32 +190,40 @@ namespace CET107_Projeto_9_IMC
                 }
             };
 
-            //evento click do botão sair
-            ibSairC!.Click += delegate
+
+            if(ibSairC != null)
             {
-                //FinishAffinity(); encerra a  atividade atual e as relacionadas fechando toda a aplicação
-
-                new Android.App.AlertDialog.Builder(this)
-                .SetTitle("Saída da Aplicação!")
-                .SetMessage("Tem certeza de que deseja sair da aplicaçao?")
-                .SetPositiveButton("OK", (sender, args) =>
+                ibSairC!.Click += delegate
                 {
-                    FinishAffinity(); //encerra a  atividade atual e as relacionadas fechando toda a aplicação
-                })
-                .SetNegativeButton("Cancel", (sender, args) =>
-                {
-                    //Ação para o botao cancel, (opcional)
-                    //Neste não é necessário fazer nada porque a caixa será fechada automaticamente.
-                })
-                .Show();
+                    VerificaSaida();
+                };
 
-            };
-
+            }
+      
         }
 
-        //Método processa resultado IMC
+        private void VerificaSaida()
+        {
+           if(this == null)  return;
+           var builder = new Android.App.AlertDialog.Builder(this);
+            builder.SetTitle("Confirmação da Saída!");
+            builder.SetMessage("Tem certeza de que deseja sair da aplicaçao?");
+            builder.SetPositiveButton("Sim", (sender, args) =>
+            {
+                FinishAffinity(); //encerra a  atividade atual e as relacionadas fechando toda a aplicação
+            });
+            builder.SetNegativeButton("Não", (sender, args) =>
+            {
+                //Ação para o botao cancel, (opcional)
+                //Neste não é necessário fazer nada porque a caixa será fechada automaticamente.
+            });
+              builder.Show();
+        }
 
-        private void ProcessaResultadoIMC(double imc)
+
+    //Método processa resultado IMC
+
+    private void ProcessaResultadoIMC(double imc)
         {
             string mensagem = string.Empty;
             string imagem = string.Empty;
@@ -262,6 +273,7 @@ namespace CET107_Projeto_9_IMC
         //calculo do IMC
         private void MostraImagem(string imagem)
         {
+            if (Resources == null || ivIMCC == null) return;
             int resourceId = Resources.GetIdentifier(imagem, "drawable", PackageName);
             ivIMCC!.SetImageResource(resourceId);
         }
@@ -293,7 +305,7 @@ namespace CET107_Projeto_9_IMC
     //FontHelper
     public static class FontHelper
     {
-        public static void AplicaFonte(View view, Typeface tf) //método
+        public static void AplicaFonte(View? view, Typeface tf) //método
         {
             if(view is ViewGroup group)
             {
