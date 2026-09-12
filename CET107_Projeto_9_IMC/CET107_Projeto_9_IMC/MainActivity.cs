@@ -11,11 +11,11 @@ namespace CET107_Projeto_9_IMC
     public class MainActivity : Activity
     {
         //ENTRADAS
-        EditText etPesoC, etAlturaC;
+        EditText? etPesoC = null, etAlturaC = null;
 
         //SAÍDA
-        TextView tvIMCC;
-
+        TextView? tvIMCC =  null;
+        ImageView? ivIMCC = null;
 
 
 
@@ -29,13 +29,14 @@ namespace CET107_Projeto_9_IMC
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
 
-            tvIMCC = FindViewById<TextView>(Resource.Id.tvIMC);
             etPesoC = FindViewById<EditText>(Resource.Id.etPeso);
             etAlturaC = FindViewById<EditText>(Resource.Id.etAltura);
 
             Button? btCalcularC = FindViewById<Button>(Resource.Id.btCalcular)!;
             Button? btLimparC = FindViewById<Button>(Resource.Id.btLimpar)!;
 
+            tvIMCC = FindViewById<TextView>(Resource.Id.tvIMC);
+            ivIMCC = FindViewById<ImageView>(Resource.Id.ivIMC);
 
             //DEFINIR A FONTE DA APLICACAO E ATRIBUIR AOS CONTROLOSUI
             Typeface minhaFonte = Resources.GetFont(Resource.Font.MontserratRegular);
@@ -85,8 +86,9 @@ namespace CET107_Projeto_9_IMC
                             {
                                 //imc = peso / (altura * altura);
                                 imc = peso / Math.Pow(altura, 2);
-                                string resultado = ProcessaResultado(imc);
-                                MostraMensagem(resultado);
+
+                                 ProcessaResultadoIMC(imc);
+                              
                                 tvIMCC!.Text = imc.ToString("F2",
                                     System.Globalization.CultureInfo.InvariantCulture);
                             }
@@ -178,48 +180,67 @@ namespace CET107_Projeto_9_IMC
                     etPesoC!.Text = string.Empty;
                     etAlturaC!.Text = string.Empty;
                     tvIMCC!.Text = string.Empty;
+                    MostraImagem("img_imc0");
                     etPesoC!.RequestFocus();
                 }
             };
 
         }
 
-        //Método processa resultado
+        //Método processa resultado IMC
 
-        private string ProcessaResultado(double imc)
+        private void ProcessaResultadoIMC(double imc)
         {
             string mensagem = string.Empty;
+            string imagem = string.Empty;
 
             if (imc < 16.9)
             {
-                mensagem = "Desnutrido.";
+                mensagem = "Peso muito baixo.";
+                imagem = "img_imc1";
             }
             else if (imc < 18.5)
             {
                 mensagem = "Abaixo do peso.";
+                imagem = "img_imc1";
             }
             else if (imc >= 18.5 && imc < 25)
             {
                 mensagem = "Peso normal";
+                imagem = "img_imc2";
             }
             else if (imc >= 25 && imc < 30)
             {
                 mensagem = "Acima do peso";
+                imagem = "img_imc3";
             }
             else if (imc >= 30 && imc < 35)
             {
                 mensagem = "Obesidade grau I.";
+                imagem = "img_imc4";
             }
             else if (imc >= 35 && imc < 40)
             {
                 mensagem = "Obesidade grau II.";
+                imagem = "img_imc5";
             }
             else
             {
                 mensagem = "Obesidade grau III.";
+                imagem = "img_imc5";
             }
 
-            return mensagem;
+            MostraMensagem(mensagem);
+            MostraImagem(imagem);
+
+        }
+
+        //responsavel por exibir a imagem correspondente ao 
+        //calculo do IMC
+        private void MostraImagem(string imagem)
+        {
+            int resourceId = Resources.GetIdentifier(imagem, "drawable", PackageName);
+            ivIMCC!.SetImageResource(resourceId);
         }
 
         private void MostraMensagem(string mensagem)
